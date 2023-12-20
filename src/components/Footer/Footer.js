@@ -31,7 +31,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>This Portfolio made by Ahmed Alaa &copy; Last updated At {new Date().getFullYear()} {new Date().getMonth()} </Slogan>
+          <Slogan>This Portfolio made by Ahmed Alaa &copy; Last updated At {new Date().getFullYear()} {new Date().getMonth()+1} </Slogan>
         </CompanyContainer>
       <SocialContainer>
         <SocialIcons target="_blank" href="https://github.com/Ahmedalla1144">
