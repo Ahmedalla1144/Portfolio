@@ -12,7 +12,6 @@ export default function NotFound() {
       <SectionText>Could not find requested resource</SectionText>
       <SecondaryBtn className="max-w-md">
         <Link href="/">Return Home</Link>
-        <li>ahmed</li>
       </SecondaryBtn>
     </div>
   );
