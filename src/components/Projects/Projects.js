@@ -26,7 +26,7 @@ export default function Projects() {
   useEffect(() => {
     async function getAllProjects() {
       try {
-        const res = await axios.get("http://localhost:8000/api/projects");
+        const res = await axios.get("https://magedyassen.000.pe/api/projects");
         if (res.data) {
           setProjects(res.data);
           console.log(res.data);
