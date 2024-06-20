@@ -20,24 +20,31 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import axios from "axios";
+import { projects } from "@/constants/constants";
 
 export default function Projects() {
-  const [projects, setProjects] = useState([]);
-  useEffect(() => {
-    async function getAllProjects() {
-      try {
-        const res = await axios.get("https://magedyassen.000.pe/api/projects");
-        if (res.data) {
-          setProjects(res.data);
-          console.log(res.data);
-        }
-      } catch (error) {
-        console.error(error);
-      }
-    }
+  // const [projects, setProjects] = useState([]);
+  // const config = {
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //     'Access-Control-Allow-Origin': '*'
+  //   }
+  // };
+  // useEffect(() => {
+  //   async function getAllProjects() {
+  //     try {
+  //       const res = await fetch("https://magedyassen.000.pe/api/projects" , config);
+  //       if (res.data) {
+  //         setProjects(res.data);
+  //         console.log(res.data);
+  //       }
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   }
 
-    getAllProjects();
-  }, []);
+  //   getAllProjects();
+  // }, []);
   return (
     <Section nopadding>
       <SectionDivider />
