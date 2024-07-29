@@ -19,7 +19,6 @@ import {
   SectionDivider,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import axios from "axios";
 // import { projects } from "@/constants/constants";
 
 export default function Projects() {
